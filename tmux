@@ -57,7 +57,7 @@ set-option -g status-style bg=black
 set-option -g status-left ''
 
 set-option -g status-left-length 60
-set-option -g status-right '#[fg=#555555]#S #[fg=#db434d]▓#[fg=#ef905d]▓#[fg=#d1cf5e]▓#[fg=#2a824c]▓#[fg=#167596]▓'
+set-option -g status-right ' i am become death #[fg=#555555]#S #[fg=#db434d]▓#[fg=#ef905d]▓#[fg=#d1cf5e]▓#[fg=#2a824c]▓#[fg=#167596]▓'
 
 setw -g window-status-fg blue
 setw -g window-status-format "#I|#W"
@@ -87,13 +87,15 @@ set -g renumber-windows on
 set -g repeat-time 500
 set -g set-titles off
 set -g set-titles-string "#S:#I:#W - \"#T\" #{session_alerts}"
-set-option -ga terminal-overrides ",st-256color:Tc"
+#set-option -ga terminal-overrides ",st-256color:Tc"
 set -g visual-activity off
 set -g visual-bell off
 set -g visual-silence off
 set -g word-separators " -_@"
 
 bind C-y set-window-option synchronize-panes
+
+#source-file ~/.tmux-themepack/powerline/block/blue.tmuxtheme
 
 # vim: set ft=tmux:
 
