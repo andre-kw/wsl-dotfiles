@@ -104,3 +104,4 @@ alias eureka="vim ~/doc/eureka.txt"
 alias zshrc="source ~/etc/zsh"
 
 unsetopt beep
+
